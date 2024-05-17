@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.navbar {
+  background-color: #1E202B;
+}
+
+.navbar-nav .nav-link {
+  color: white !important;
+}
+
+.background-image {
+  position: relative;
+  background-image: url('./bridge-7675585.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 300px;
+  width: 100%;
+  filter: blur(2px); 
+  z-index: 1; 
+}
+
+.search-container {
+  position: absolute; 
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  display: flex
+ 
+}
+
+.search-input {
+  width: 80%;
+  max-width: 600px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 50px 0 0 50px;
+  outline: none;
+  font-size: 16px;
+  background-color: #1f1f1f;
+  color: #fff;
+}
+
+.search-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 0 50px 50px 0;
+  background-color: #1a73e8;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  outline: none;
+}
+
+.search-button:hover {
+  background-color: #155ab6;
+}
+
+.weather-forecast {
+  display: flex;
+  justify-content: center;
+  gap: 2px; 
+  padding: 20px;
+}
+
+.day {
+  cursor: pointer;
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  transition: transform 0.2s, max-height 0.3s ease-in-out;
+  overflow: hidden;
+  max-height: 400px; 
+  position: relative;
+  width: 300px;
+}
+
+.day.expanded {
+  max-height: 900px;
+}
+
+.weather-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.details {
+  display: none;
+  text-align: left;
+  margin-top: 20px;
+}
+
+.day.expanded .details {
+  display: block;
+}
+
+.input-group {
+  position: absolute;
+  top: -219px;
+}
+
+.btn .text {
+  color: #6c757d;
+  font-size: 1.2rem;
+}
+
+.live-camera {
+  background-color: #1E202B;
+  height: 500px;
+  align-items: center;
+}
+
+#live-text {
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.footer p{
+  font-size: large;
+  font-weight: bold;
+}
